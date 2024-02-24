@@ -1,32 +1,21 @@
-pipeline { 
-
-agent any
-
-stages {
-
-	stage('git') {
-
-		echo "this is the testing groovy "
-
-
-		}
-
-	stage('build') {
-
-		echo "this is the testing groovy "
-
-
-	}
-
-
-	stage('deploy') {
-
-		echo "this is the testing groovy "
-
-	}
-
-
+pipeline {
+    agent any
+    stages {
+        stage('git') {
+            steps {
+                echo "Checking out code from Git..."
+            }
+        }
+        stage('build') {
+            steps {
+                echo "Building the project..."
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo "Deploying the application..."
+            }
+        }
+    }
 }
 
-
-}
