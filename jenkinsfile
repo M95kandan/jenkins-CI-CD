@@ -1,0 +1,19 @@
+pipeline { 
+
+agent any
+
+stages {
+
+	stage('git') {
+
+		echo "this is the testing groovy "
+
+
+		}
+
+
+	}
+
+     }
+
+}
