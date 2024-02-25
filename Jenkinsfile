@@ -4,7 +4,6 @@ pipeline {
         stage('git') {
             steps {
                 echo "Checking out code from Git..."
-                echo "Checking out code from Git..."
             }
         }
         stage('build') {
